@@ -75,6 +75,8 @@ status.register("alsa",
     format="♪{volume}",
     format_muted="⍉",)
 
+status.register("cmus",
+    format="{status} {song_elapsed}/{song_length} {title} - {artist}",)
 
 
 status.register("backlight",

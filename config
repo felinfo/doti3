@@ -178,6 +178,7 @@ bindsym $ms+h exec thunar
 bindsym $ms+f exec firefox
 bindsym $ms+t exec xfce4-terminal
 bindsym $ms+r exec xfce4-terminal -e ranger
+bindsym $ms+m exec xfce4-terminal -e cmus 
 bindsym $ms+g exec gedit
 bindsym $ms+c exec chromium
 bindsym Print exec xfce4-screenshooter -f
