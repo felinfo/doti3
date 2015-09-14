@@ -229,3 +229,4 @@ exec --no-startup-id setxkbmap es
 exec --no-startup-id sleep 30; conky
 exec --no-startup-id nm-applet
 exec --no-startup-id sleep 60; ~/scripts/wallpaper.sh
+exec --no-startup-id ~/scripts/gestorMonitores.sh
