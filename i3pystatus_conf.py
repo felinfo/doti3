@@ -41,15 +41,15 @@ status.register("battery",
 
 # This would look like this:
 # Discharging 6h:51m
-status.register("battery",
-    format="{status} {remaining:%E%hh:%Mm}",
-    alert=True,
-    alert_percentage=5,
-    status={
-        "DIS":  "Discharging",
-        "CHR":  "Charging",
-        "FULL": "Bat full",
-    },)
+# status.register("battery",
+#    format="{status} {remaining:%E%hh:%Mm}",
+#    alert=True,
+#    alert_percentage=5,
+#    status={
+#        "DIS":  "Discharging",
+#        "CHR":  "Charging",
+#        "FULL": "Bat full",
+#    },)
 
 
 # Shows disk usage of /
@@ -65,9 +65,9 @@ status.register("battery",
 #     format="w {avail}G",)
 
 
-status.register("disk",
-    path="/media/datos",
-    format="d {avail}G",)
+# status.register("disk",
+#    path="/media/datos",
+#    format="d {avail}G",)
 
 
 # Alsa
