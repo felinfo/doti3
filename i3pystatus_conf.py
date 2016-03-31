@@ -30,9 +30,9 @@ status.register("temp",
 # This would also display a desktop notification (via dbus) if the percentage
 # goes below 5 percent while discharging. The block will also color RED.
 status.register("battery",
-    format="{percentage:.2f}%",
+    format="{status} {percentage:.2f}%",
     alert=True,
-    alert_percentage=5,
+    alert_percentage=15,
     status={
         "DIS": "↓",
         "CHR": "↑",
