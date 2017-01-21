@@ -16,6 +16,10 @@ status.register("clock",
 # (the default value for format is used)
 status.register("load")
 
+# Ram
+status.register("mem",
+    format="{percent_used_mem} % MiB used",)
+
 # Shows your CPU temperature, if you have a Intel CPU
 status.register("temp",
     format="{temp:.0f}°C",)
@@ -65,9 +69,9 @@ status.register("battery",
 #     format="w {avail}G",)
 
 
-# status.register("disk",
-#    path="/media/datos",
-#    format="d {avail}G",)
+status.register("disk",
+   path="/media/datos",
+   format="d {avail}G",)
 
 
 # Alsa
@@ -80,7 +84,7 @@ status.register("cmus",
 
 
 # status.register("backlight",
-#    format="☀ {percentage}% ☀",)
+#   format="☀ {percentage}% ☀",)
 
 # Shows the address and up/down state of eth0. If it is up the address is shown in
 # green (the default value of color_up) and the CIDR-address is shown
@@ -97,35 +101,13 @@ status.register("cmus",
 # like quality and network names.
 #
 # Note: requires both netifaces and basiciw
-#status.register("network",
-#    interface="wlp0s29f7u4",
+# status.register("network",
+#    interface="wlp2s0",
 #    format_up="{essid} {quality:03.0f}%",)
 
-status.register("network",
-    interface="enp2s0",
-    graph_style="braille-snake",
-    format_up="LAN: ↑{bytes_sent}KB/s ↓{bytes_recv}KB/s",
-    format_down="LAN",
-    color_down = "#FFFFFF",
-    color_up = "#00FF00",
-    start_color = "#00FF00",
-    end_color = "#0FFF00",)
-
- 
-status.register("network",
-    interface="ppp0",
-    unknown_up="True",
-    graph_style="braille-snake",
-    format_up="3G: ↑{bytes_sent}KB/s ↓{bytes_recv}KB/s",
-    format_down="3G",
-    color_down = "#FFFFFF",
-    color_up = "#00FF00",
-    start_color = "#00FF00",
-    end_color = "#80FF00",)
-
 
 status.register("network",
-    interface="wlp0s29f7u4",
+    interface="wlp2s0",
     graph_style="braille-snake",
     format_up="WIFI: {essid} {quality:3.0f}% ↑{bytes_sent}KB/s ↓{bytes_recv}KB/s",
     format_down="WIFI",
@@ -133,6 +115,8 @@ status.register("network",
     color_up = "#00FF00",
     start_color = "#00FF00",
     end_color = "#80FF00",)
+
+
 
 status.run()
 
