@@ -182,7 +182,7 @@ bindsym $ms+g exec gedit
 bindsym $ms+c exec chromium
 bindsym $ms+l exec ~/.telegram/Telegram
 bindcode $ms+107 exec gnome-screenshot -w
-
+bindsym $ms+v exec vncviewer
 
 # Pulse Audio controls
 # bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
