@@ -179,7 +179,7 @@ bindsym $ms+t exec gnome-terminal
 bindsym $ms+r exec gnome-terminal -e ranger
 bindsym $ms+m exec gnome-terminal -e cmus 
 bindsym $ms+g exec gedit
-bindsym $ms+c exec chromium
+bindsym $ms+c exec /bin/google-chrome-stable
 bindsym $ms+l exec ~/.telegram/Telegram
 bindcode $ms+107 exec gnome-screenshot -w
 bindsym $ms+v exec vncviewer
